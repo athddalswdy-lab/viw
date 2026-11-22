@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rania Portfolio | معرض أعمال رانيا</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+:root {
+  --purple:#6846a5;
+  --dark:#241b35;
+  --gold:#d6b36a;
+  --light:#faf8ff;
+}
+
+* {box-sizing:border-box;scroll-behavior:smooth}
+
+body {
+ margin:0;
+ font-family:'Tajawal',sans-serif;
+ background:var(--light);
+ color:var(--dark);
+}
+
+header {
+ background:#fff;
+ padding:18px 7%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ position:sticky;
+ top:0;
+ z-index:10;
+ box-shadow:0 3px 15px #0000000d;
+}
+
+.logo {
+ color:var(--purple);
+ font-size:25px;
+ font-weight:800;
+}
+
+nav a {
+ text-decoration:none;
+ color:#453958;
+ margin:0 10px;
+ font-weight:700;
+}
+
+.hero {
+ min-height:550px;
+ padding:90px 8%;
+ display:flex;
+ align-items:center;
+ background:linear-gradient(120deg,#241b35,#654397,#a98ac9);
+ color:white;
+}
+
+.hero-content {max-width:750px}
+
+.hero h1 {
+ font-size:48px;
+ margin-bottom:15px;
+}
+
+.hero h1 span {color:#f0d38f}
+
+.hero p {
+ font-size:21px;
+ line-height:2;
+}
+
+.btn {
+ display:inline-block;
+ padding:13px 27px;
+ border-radius:30px;
+ text-decoration:none;
+ font-weight:bold;
+ margin:10px 5px;
+ background:var(--gold);
+ color:#241b35;
+}
+
+.btn-outline {
+ border:1px solid white;
+ color:white;
+ background:transparent;
+}
+
+section {padding:75px 8%}
+
+.section-title {
+ text-align:center;
+ color:var(--purple);
+ font-size:32px;
+ margin-bottom:35px;
+}
+
+.about {
+ text-align:center;
+ line-height:2;
+ font-size:19px;
+ max-width:850px;
+ margin:auto;
+}
+
+.stats {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:20px;
+ margin-top:35px;
+}
+
+.stat {
+ background:white;
+ padding:25px;
+ text-align:center;
+ border-radius:18px;
+ box-shadow:0 5px 20px #00000009;
+}
+
+.stat strong {
+ display:block;
+ font-size:30px;
+ color:var(--purple);
+}
+
+.grid {
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:22px;
+}
+
+.card {
+ background:white;
+ padding:25px;
+ border-radius:18px;
+ box-shadow:0 5px 20px #0000000d;
+ transition:.3s;
+}
+
+.card:hover {transform:translateY(-6px)}
+
+.card .symbol {
+ font-size:38px;
+}
+
+.card h3 {color:var(--purple)}
+
+.card p {line-height:1.8}
+
+.education {background:#f0eafa}
+
+.portfolio-card {
+ background:white;
+ border-radius:18px;
+ overflow:hidden;
+ box-shadow:0 5px 20px #0000000d;
+}
+
+.portfolio-card .visual {
+ min-height:140px;
+ display:grid;
+ place-items:center;
+ background:linear-gradient(135deg,#6d4b9c,#c6acd9);
+ color:white;
+ font-size:45px;
+}
+
+.portfolio-card .info {padding:20px}
+
+.portfolio-card h3 {color:var(--purple)}
+
+.portfolio-card a {
+ color:var(--purple);
+ font-weight:bold;
+ text-decoration:none;
+}
+
+.contact {
+ background:#281e39;
+ color:white;
+ text-align:center;
+}
+
+.contact h2 {color:#f0d38f}
+
+.contact p {font-size:20px;line-height:2}
+
+footer {
+ text-align:center;
+ background:#1c1528;
+ color:white;
+ padding:22px;
+}
+
+@media(max-width:700px) {
+ header {flex-direction:column;gap:15px}
+ nav {display:flex;flex-wrap:wrap;justify-content:center}
+ nav a {font-size:13px;margin:5px}
+ .hero h1 {font-size:34px}
+ .stats {grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">RANIA PORTFOLIO ✦</div>
+ <nav>
+  <a href="#home">الرئيسية</a>
+  <a href="#about">من أنا</a>
+  <a href="#services">خدماتي</a>
+  <a href="#portfolio">أعمالي</a>
+  <a href="#contact">تواصل</a>
+ </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+ <div class="hero-content">
+  <h1>أنا رانيا الخزاعي<br>
+  <span>مدربة تقنية وصانعة إبداع</span></h1>
+
+  <p>
+   خبرة تتجاوز 15 عاماً في التدريب التقني،
+   البرمجة، تطبيقات الحاسب، الذكاء الاصطناعي
+   والتصميم الجرافيكي.
+   أحوّل المعرفة التقنية إلى مهارات عملية وإبداعية.
+  </p>
+
+  <a class="btn" href="#portfolio">اكتشف أعمالي</a>
+  <a class="btn btn-outline"
+  href="https://wa.me/966534660779">تواصل معي</a>
+ </div>
+</section>
+
+<section id="about">
+ <h2 class="section-title">من أنا؟</h2>
+ <div class="about">
+  <p>
+   رانيا الخزاعي، مدربة حاسب آلي ومدربة تقنية،
+   أمتلك خبرة تزيد عن 15 عاماً في مجال التدريب والتعليم التقني.
+   أؤمن بأن التقنية ليست مجرد أدوات، بل وسيلة للإبداع
+   والتطوير وصناعة المستقبل.
+  </p>
+  <p>
+   أحمل مؤهلين بدرجة البكالوريوس، ودبلوماً،
+   إضافة إلى العديد من الدورات والشهادات التدريبية.
+   وأسعى إلى تقديم تجارب تعليمية وتدريبية عصرية
+   تجمع بين المعرفة والتطبيق.
+  </p>
+ </div>
+
+ <div class="stats">
+  <div class="stat">
+   <strong>15+</strong>
+   سنة خبرة
+  </div>
+  <div class="stat">
+   <strong>2</strong>
+   بكالوريوس
+  </div>
+  <div class="stat">
+   <strong>1</strong>
+   دبلوم
+  </div>
+ </div>
+</section>
+
+<section id="services" class="education">
+ <h2 class="section-title">خدماتي التدريبية</h2>
+ <div class="grid">
+
+  <div class="card">
+   <div class="symbol">💻</div>
+   <h3>تطبيقات الحاسب</h3>
+   <p>دورات Microsoft Office، Word، Excel،
+   PowerPoint والمهارات الرقمية.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🤖</div>
+   <h3>الذكاء الاصطناعي</h3>
+   <p>التدريب على أدوات الذكاء الاصطناعي
+   وتوظيفها في التعليم والعمل والإنتاج.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">👩‍💻</div>
+   <h3>البرمجة وتطوير المواقع</h3>
+   <p>تعلم HTML وCSS وأساسيات البرمجة
+   وتصميم مواقع الويب.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🎨</div>
+   <h3>التصميم الجرافيكي</h3>
+   <p>تصميم العروض التقديمية والهوية البصرية
+   والإعلانات والمحتوى الرقمي.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">📊</div>
+   <h3>العروض التقديمية</h3>
+   <p>إعداد عروض احترافية وتفاعلية
+   باستخدام PowerPoint وأدوات الذكاء الاصطناعي.</p>
+  </div>
+
+  <div class="card">
+   <div class="symbol">🌐</div>
+   <h3>الخدمات الإلكترونية</h3>
+   <p>إنشاء المواقع والمنصات التعليمية
+   وتقديم الحلول الرقمية.</p>
+  </div>
+
+ </div>
+</section>
+
+<section id="portfolio">
+ <h2 class="section-title">معرض أعمالي ومشاريعي</h2>
+
+ <div class="grid">
+
+  <div class="portfolio-card">
+   <div class="visual">📽️</div>
+   <div class="info">
+    <h3>العروض التقديمية</h3>
+    <p>عروض تعليمية وتدريبية احترافية وتفاعلية.</p>
+    <a href="mailto:YOUR_EMAIL">اطلب عرضاً تقديمياً</a>
+   </div>
+  </div>
+
+  <div class="portfolio-card">
+   <div class="visual">🤖</div>
+   <div class="info">
+    <h3>مشاريع الذكاء الاصطناعي</h3>
+    <p>مشاريع وأفكار مبتكرة باستخدام أدوات AI.</p>
+    <a href="#contact">استفسر عن المشاريع</a>
+   </div>
+  </div>
+
+  <div class="portfolio-card">
+   <div class="visual">💻</div>
+   <div class="info">
+    <h3>تصميم المواقع</h3>
+    <p>تصميم صفحات ومواقع إلكترونية عصرية.</p>
+    <a href="#contact">اطلب موقعك</a>
+   </div>
+  </div>
+
+  <div class="portfolio-card">
+   <div class="visual">🎨</div>
+   <div class="info">
+    <h3>التصاميم الإبداعية</h3>
+    <p>تصاميم رقمية وإعلانات ومواد تعليمية.</p>
+    <a href="#contact">اطلب تصميمك</a>
+   </div>
+  </div>
+
+ </div>
+</section>
+
+<section class="education">
+ <h2 class="section-title">المؤهلات والشهادات</h2>
+ <div class="grid">
+  <div class="card">
+   <div class="symbol">🎓</div>
+   <h3>مؤهلان جامعيان</h3>
+   <p>درجة البكالوريوس في تخصصين.</p>
+  </div>
+  <div class="card">
+   <div class="symbol">📜</div>
+   <h3>دبلوم</h3>
+   <p>مؤهل دبلوم.</p>
+  </div>
+  <div class="card">
+   <div class="symbol">🏅</div>
+   <h3>دورات وشهادات تدريبية</h3>
+   <p>مجموعة متنوعة من الدورات والتطوير المهني.</p>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <h2 class="section-title">لنبدأ رحلة الإبداع معاً</h2>
+ <p>
+  للتسجيل في الدورات التدريبية أو طلب الخدمات التقنية
+  والعروض التقديمية والتصاميم.
+ </p>
+
+ <h3>المدربة رانيا الخزاعي</h3>
+ <p>📞 0534660779</p>
+
+ <a class="btn"
+ href="https://wa.me/966534660779">
+ تواصل عبر واتساب
+ </a>
+
+ <a class="btn btn-outline"
+ href="tel:0534660779">
+ اتصال مباشر
+ </a>
+
+ <p>التدريب التقني | البرمجة | الذكاء الاصطناعي | التصميم</p>
+</section>
+
+</main>
+
+<footer>
+ © 2026 Rania Portfolio
+ جميع الحقوق محفوظة للمدربة رانيا الخزاعي
+</footer>
+
+</body>
+</html>
